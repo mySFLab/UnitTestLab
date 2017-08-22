@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/laurentbrau/Sites/basic-symfony3-project-symfony3-way/src/AppBundle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet">
+  <link href=".css/nv.d3.min.css" rel="stylesheet">
+  <link href=".css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src=".js/html5shiv.min.js"></script>
+  <script src=".js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/Users/laurentbrau/Sites/basic-symfony3-project-symfony3-way/src/AppBundle</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/BackendController.php.html#14">BackendController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ContactController.php.html#12">ContactController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test/TypeTestCase.php.html#8">TypeTestCase</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/MailerService.php.html#5">MailerService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/VoteRepository.php.html#11">VoteRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#15">MediaRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/VoteType.php.html#10">VoteType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/MediaType.php.html#10">MediaType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/ContactType.php.html#14">ContactType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#19">User</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test/WebTestCase.php.html#9">WebTestCase</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/MediaManager.php.html#10">MediaManager</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/ContactManager.php.html#8">ContactManager</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#9">Contact</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadVoteData.php.html#10">LoadVoteData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadUserData.php.html#12">LoadUserData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadMediaData.php.html#10">LoadMediaData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#21">SecurityController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#16">DefaultController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Media.php.html#14">Media</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Entity/Manager/VoteManager.php.html#11">VoteManager</a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Entity/Vote.php.html#17">Vote</a></td><td class="text-right">73%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Entity/Contact.php.html#9">Contact</a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#16">DefaultController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Entity/User.php.html#19">User</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#15">MediaRepository</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Entity/Manager/MediaManager.php.html#10">MediaManager</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Entity/Media.php.html#14">Media</a></td><td class="text-right">32</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadUserData.php.html#12">LoadUserData</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controller/BackendController.php.html#14">BackendController</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadMediaData.php.html#10">LoadMediaData</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadVoteData.php.html#10">LoadVoteData</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/ContactController.php.html#12">ContactController</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Test/TypeTestCase.php.html#8">TypeTestCase</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Test/WebTestCase.php.html#9">WebTestCase</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Manager/VoteManager.php.html#11">VoteManager</a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/BackendController.php.html#19"><abbr title="BackendController::newMediaAction">newMediaAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#130"><abbr title="User::getEmail">getEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#201"><abbr title="User::getSalt">getSalt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#186"><abbr title="User::getRoles">getRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#174"><abbr title="User::encodePassword">encodePassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#164"><abbr title="User::setPlainPassword">setPlainPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#159"><abbr title="User::getPlainPassword">getPlainPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#154"><abbr title="User::getPassword">getPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#142"><abbr title="User::setPassword">setPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#118"><abbr title="User::setEmail">setEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Vote.php.html#82"><abbr title="Vote::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#106"><abbr title="User::getUsername">getUsername</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#94"><abbr title="User::setUsername">setUsername</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#82"><abbr title="User::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Media.php.html#193"><abbr title="Media::getVotes">getVotes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Media.php.html#183"><abbr title="Media::removeVote">removeVote</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Media.php.html#113"><abbr title="Media::getTitle">getTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Media.php.html#101"><abbr title="Media::setTitle">setTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Media.php.html#89"><abbr title="Media::getUrl">getUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#206"><abbr title="User::eraseCredentials">eraseCredentials</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Vote.php.html#118"><abbr title="Vote::setDate">setDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Media.php.html#65"><abbr title="Media::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#92"><abbr title="MediaRepository::getHydratedMediaById">getHydratedMediaById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test/TypeTestCase.php.html#10"><abbr title="TypeTestCase::fromArray">fromArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/MailerService.php.html#26"><abbr title="MailerService::createMessageInstance">createMessageInstance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/MailerService.php.html#20"><abbr title="MailerService::sendMail">sendMail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Service/MailerService.php.html#12"><abbr title="MailerService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/VoteRepository.php.html#13"><abbr title="VoteRepository::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#145"><abbr title="MediaRepository::save">save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#110"><abbr title="MediaRepository::getNewMediaForUser">getNewMediaForUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#71"><abbr title="MediaRepository::getFlopsMedia">getFlopsMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Vote.php.html#130"><abbr title="Vote::getDate">getDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#53"><abbr title="MediaRepository::getTopsMedia">getTopsMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#22"><abbr title="MediaRepository::getRandomMedia">getRandomMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/VoteType.php.html#28"><abbr title="VoteType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/VoteType.php.html#16"><abbr title="VoteType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/MediaType.php.html#27"><abbr title="MediaType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/MediaType.php.html#16"><abbr title="MediaType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/ContactType.php.html#47"><abbr title="ContactType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/Type/ContactType.php.html#16"><abbr title="ContactType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Media.php.html#77"><abbr title="Media::setUrl">setUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/VoteManager.php.html#55"><abbr title="VoteManager::saveVote">saveVote</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ContactController.php.html#17"><abbr title="ContactController::indexAction">indexAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#47"><abbr title="SecurityController::loginCheckAction">loginCheckAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadVoteData.php.html#12"><abbr title="LoadVoteData::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadUserData.php.html#55"><abbr title="LoadUserData::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadUserData.php.html#22"><abbr title="LoadUserData::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadUserData.php.html#17"><abbr title="LoadUserData::setContainer">setContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadMediaData.php.html#31"><abbr title="LoadMediaData::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadMediaData.php.html#12"><abbr title="LoadMediaData::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#60"><abbr title="SecurityController::logoutAction">logoutAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#26"><abbr title="SecurityController::loginAction">loginAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#79"><abbr title="Contact::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#163"><abbr title="DefaultController::getVoteManager">getVoteManager</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#155"><abbr title="DefaultController::getMediaManager">getMediaManager</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#117"><abbr title="DefaultController::voteMediaAction">voteMediaAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#99"><abbr title="DefaultController::showFlopsAction">showFlopsAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#86"><abbr title="DefaultController::showTopsAction">showTopsAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#47"><abbr title="DefaultController::showMediaAction">showMediaAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#34"><abbr title="DefaultController::showRandomMediaAction">showRandomMediaAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#21"><abbr title="DefaultController::indexAction">indexAction</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadVoteData.php.html#31"><abbr title="LoadVoteData::getOrder">getOrder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#91"><abbr title="Contact::setFirstName">setFirstName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/MediaManager.php.html#66"><abbr title="MediaManager::saveMedia">saveMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#223"><abbr title="Contact::getKnowledge">getKnowledge</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/MediaManager.php.html#54"><abbr title="MediaManager::getMedia">getMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/MediaManager.php.html#33"><abbr title="MediaManager::getNextMedia">getNextMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/MediaManager.php.html#22"><abbr title="MediaManager::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/ContactManager.php.html#75"><abbr title="ContactManager::sendMail">sendMail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Manager/ContactManager.php.html#54"><abbr title="ContactManager::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#256"><abbr title="Contact::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#247"><abbr title="Contact::getOther">getOther</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#235"><abbr title="Contact::setOther">setOther</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#211"><abbr title="Contact::setKnowledge">setKnowledge</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#103"><abbr title="Contact::getFirstName">getFirstName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#199"><abbr title="Contact::getAdditionalInformation">getAdditionalInformation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#187"><abbr title="Contact::setAdditionalInformation">setAdditionalInformation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#175"><abbr title="Contact::getEmail">getEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#163"><abbr title="Contact::setEmail">setEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#151"><abbr title="Contact::getCellphone">getCellphone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#139"><abbr title="Contact::setCellphone">setCellphone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#127"><abbr title="Contact::getLastName">getLastName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#115"><abbr title="Contact::setLastName">setLastName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Test/WebTestCase.php.html#11"><abbr title="WebTestCase::loadFixtures">loadFixtures</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/DefaultController.php.html#47"><abbr title="DefaultController::showMediaAction">showMediaAction</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/BackendController.php.html#19"><abbr title="BackendController::newMediaAction">newMediaAction</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/DefaultController.php.html#117"><abbr title="DefaultController::voteMediaAction">voteMediaAction</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/Contact.php.html#256"><abbr title="Contact::validate">validate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/Manager/MediaManager.php.html#33"><abbr title="MediaManager::getNextMedia">getNextMedia</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/ContactController.php.html#17"><abbr title="ContactController::indexAction">indexAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadMediaData.php.html#12"><abbr title="LoadMediaData::load">load</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadUserData.php.html#22"><abbr title="LoadUserData::load">load</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataFixtures/ORM/LoadVoteData.php.html#12"><abbr title="LoadVoteData::load">load</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Manager/MediaManager.php.html#54"><abbr title="MediaManager::getMedia">getMedia</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/User.php.html#174"><abbr title="User::encodePassword">encodePassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#22"><abbr title="MediaRepository::getRandomMedia">getRandomMedia</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#110"><abbr title="MediaRepository::getNewMediaForUser">getNewMediaForUser</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Test/TypeTestCase.php.html#10"><abbr title="TypeTestCase::fromArray">fromArray</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Test/WebTestCase.php.html#11"><abbr title="WebTestCase::loadFixtures">loadFixtures</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.2.1</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.6</a> with <a href="https://xdebug.org/">Xdebug 2.5.5</a> and <a href="https://phpunit.de/">PHPUnit 6.2.3</a> at Mon Aug 21 23:21:16 CEST 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  <script src=".js/holder.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([19,0,0,0,0,0,0,1,2,0,0,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([84,0,0,0,0,0,0,0,0,0,0,16], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,0,"<a href=\"AppBundle.php.html#7\">AppBundle<\/a>"],[0,3,"<a href=\"Controller\/BackendController.php.html#14\">BackendController<\/a>"],[0,2,"<a href=\"Controller\/ContactController.php.html#12\">ContactController<\/a>"],[0,14,"<a href=\"Controller\/DefaultController.php.html#16\">DefaultController<\/a>"],[0,3,"<a href=\"Controller\/SecurityController.php.html#21\">SecurityController<\/a>"],[0,3,"<a href=\"DataFixtures\/ORM\/LoadMediaData.php.html#10\">LoadMediaData<\/a>"],[0,4,"<a href=\"DataFixtures\/ORM\/LoadUserData.php.html#12\">LoadUserData<\/a>"],[0,3,"<a href=\"DataFixtures\/ORM\/LoadVoteData.php.html#10\">LoadVoteData<\/a>"],[0,18,"<a href=\"Entity\/Contact.php.html#9\">Contact<\/a>"],[0,2,"<a href=\"Entity\/Manager\/ContactManager.php.html#8\">ContactManager<\/a>"],[0,7,"<a href=\"Entity\/Manager\/MediaManager.php.html#10\">MediaManager<\/a>"],[71.42857142857143,4,"<a href=\"Entity\/Manager\/VoteManager.php.html#11\">VoteManager<\/a>"],[66.66666666666666,19,"<a href=\"Entity\/Media.php.html#14\">Media<\/a>"],[0,14,"<a href=\"Entity\/User.php.html#19\">User<\/a>"],[73.33333333333333,10,"<a href=\"Entity\/Vote.php.html#17\">Vote<\/a>"],[0,2,"<a href=\"Form\/Type\/ContactType.php.html#14\">ContactType<\/a>"],[0,2,"<a href=\"Form\/Type\/MediaType.php.html#10\">MediaType<\/a>"],[0,2,"<a href=\"Form\/Type\/VoteType.php.html#10\">VoteType<\/a>"],[0,8,"<a href=\"Repository\/MediaRepository.php.html#15\">MediaRepository<\/a>"],[100,0,"<a href=\"Repository\/UserRepository.php.html#11\">UserRepository<\/a>"],[0,1,"<a href=\"Repository\/VoteRepository.php.html#11\">VoteRepository<\/a>"],[0,3,"<a href=\"Service\/MailerService.php.html#5\">MailerService<\/a>"],[0,2,"<a href=\"Test\/TypeTestCase.php.html#8\">TypeTestCase<\/a>"],[0,2,"<a href=\"Test\/WebTestCase.php.html#9\">WebTestCase<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,3,"<a href=\"Controller\/BackendController.php.html#19\">BackendController::newMediaAction<\/a>"],[0,2,"<a href=\"Controller\/ContactController.php.html#17\">ContactController::indexAction<\/a>"],[0,1,"<a href=\"Controller\/DefaultController.php.html#21\">DefaultController::indexAction<\/a>"],[0,1,"<a href=\"Controller\/DefaultController.php.html#34\">DefaultController::showRandomMediaAction<\/a>"],[0,5,"<a href=\"Controller\/DefaultController.php.html#47\">DefaultController::showMediaAction<\/a>"],[0,1,"<a href=\"Controller\/DefaultController.php.html#86\">DefaultController::showTopsAction<\/a>"],[0,1,"<a href=\"Controller\/DefaultController.php.html#99\">DefaultController::showFlopsAction<\/a>"],[0,3,"<a href=\"Controller\/DefaultController.php.html#117\">DefaultController::voteMediaAction<\/a>"],[0,1,"<a href=\"Controller\/DefaultController.php.html#155\">DefaultController::getMediaManager<\/a>"],[0,1,"<a href=\"Controller\/DefaultController.php.html#163\">DefaultController::getVoteManager<\/a>"],[0,1,"<a href=\"Controller\/SecurityController.php.html#26\">SecurityController::loginAction<\/a>"],[0,1,"<a href=\"Controller\/SecurityController.php.html#47\">SecurityController::loginCheckAction<\/a>"],[0,1,"<a href=\"Controller\/SecurityController.php.html#60\">SecurityController::logoutAction<\/a>"],[0,2,"<a href=\"DataFixtures\/ORM\/LoadMediaData.php.html#12\">LoadMediaData::load<\/a>"],[0,1,"<a href=\"DataFixtures\/ORM\/LoadMediaData.php.html#31\">LoadMediaData::getOrder<\/a>"],[0,1,"<a href=\"DataFixtures\/ORM\/LoadUserData.php.html#17\">LoadUserData::setContainer<\/a>"],[0,2,"<a href=\"DataFixtures\/ORM\/LoadUserData.php.html#22\">LoadUserData::load<\/a>"],[0,1,"<a href=\"DataFixtures\/ORM\/LoadUserData.php.html#55\">LoadUserData::getOrder<\/a>"],[0,2,"<a href=\"DataFixtures\/ORM\/LoadVoteData.php.html#12\">LoadVoteData::load<\/a>"],[0,1,"<a href=\"DataFixtures\/ORM\/LoadVoteData.php.html#31\">LoadVoteData::getOrder<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#79\">Contact::getId<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#91\">Contact::setFirstName<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#103\">Contact::getFirstName<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#115\">Contact::setLastName<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#127\">Contact::getLastName<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#139\">Contact::setCellphone<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#151\">Contact::getCellphone<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#163\">Contact::setEmail<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#175\">Contact::getEmail<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#187\">Contact::setAdditionalInformation<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#199\">Contact::getAdditionalInformation<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#211\">Contact::setKnowledge<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#223\">Contact::getKnowledge<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#235\">Contact::setOther<\/a>"],[0,1,"<a href=\"Entity\/Contact.php.html#247\">Contact::getOther<\/a>"],[0,3,"<a href=\"Entity\/Contact.php.html#256\">Contact::validate<\/a>"],[0,1,"<a href=\"Entity\/Manager\/ContactManager.php.html#54\">ContactManager::__construct<\/a>"],[0,1,"<a href=\"Entity\/Manager\/ContactManager.php.html#75\">ContactManager::sendMail<\/a>"],[0,1,"<a href=\"Entity\/Manager\/MediaManager.php.html#22\">MediaManager::__construct<\/a>"],[0,3,"<a href=\"Entity\/Manager\/MediaManager.php.html#33\">MediaManager::getNextMedia<\/a>"],[0,2,"<a href=\"Entity\/Manager\/MediaManager.php.html#54\">MediaManager::getMedia<\/a>"],[0,1,"<a href=\"Entity\/Manager\/MediaManager.php.html#66\">MediaManager::saveMedia<\/a>"],[100,1,"<a href=\"Entity\/Manager\/VoteManager.php.html#23\">VoteManager::__construct<\/a>"],[100,2,"<a href=\"Entity\/Manager\/VoteManager.php.html#35\">VoteManager::getNewVote<\/a>"],[0,1,"<a href=\"Entity\/Manager\/VoteManager.php.html#55\">VoteManager::saveVote<\/a>"],[0,1,"<a href=\"Entity\/Media.php.html#65\">Media::getId<\/a>"],[0,1,"<a href=\"Entity\/Media.php.html#77\">Media::setUrl<\/a>"],[0,1,"<a href=\"Entity\/Media.php.html#89\">Media::getUrl<\/a>"],[0,1,"<a href=\"Entity\/Media.php.html#101\">Media::setTitle<\/a>"],[0,1,"<a href=\"Entity\/Media.php.html#113\">Media::getTitle<\/a>"],[100,1,"<a href=\"Entity\/Media.php.html#125\">Media::setAverage<\/a>"],[100,1,"<a href=\"Entity\/Media.php.html#137\">Media::getAverage<\/a>"],[100,1,"<a href=\"Entity\/Media.php.html#144\">Media::__construct<\/a>"],[100,1,"<a href=\"Entity\/Media.php.html#156\">Media::addVote<\/a>"],[100,3,"<a href=\"Entity\/Media.php.html#165\">Media::getNewAverageAfterVote<\/a>"],[0,1,"<a href=\"Entity\/Media.php.html#183\">Media::removeVote<\/a>"],[0,1,"<a href=\"Entity\/Media.php.html#193\">Media::getVotes<\/a>"],[100,2,"<a href=\"Entity\/Media.php.html#202\">Media::getDisplayedAverage<\/a>"],[100,3,"<a href=\"Entity\/Media.php.html#207\">Media::hasUserAlreadyVoted<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#82\">User::getId<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#94\">User::setUsername<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#106\">User::getUsername<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#118\">User::setEmail<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#130\">User::getEmail<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#142\">User::setPassword<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#154\">User::getPassword<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#159\">User::getPlainPassword<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#164\">User::setPlainPassword<\/a>"],[0,2,"<a href=\"Entity\/User.php.html#174\">User::encodePassword<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#186\">User::getRoles<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#201\">User::getSalt<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#206\">User::eraseCredentials<\/a>"],[100,1,"<a href=\"Entity\/Vote.php.html#72\">Vote::__construct<\/a>"],[0,1,"<a href=\"Entity\/Vote.php.html#82\">Vote::getId<\/a>"],[100,1,"<a href=\"Entity\/Vote.php.html#94\">Vote::setScore<\/a>"],[100,1,"<a href=\"Entity\/Vote.php.html#106\">Vote::getScore<\/a>"],[0,1,"<a href=\"Entity\/Vote.php.html#118\">Vote::setDate<\/a>"],[0,1,"<a href=\"Entity\/Vote.php.html#130\">Vote::getDate<\/a>"],[100,1,"<a href=\"Entity\/Vote.php.html#142\">Vote::setUser<\/a>"],[100,1,"<a href=\"Entity\/Vote.php.html#154\">Vote::getUser<\/a>"],[100,1,"<a href=\"Entity\/Vote.php.html#166\">Vote::setMedia<\/a>"],[100,1,"<a href=\"Entity\/Vote.php.html#178\">Vote::getMedia<\/a>"],[0,1,"<a href=\"Form\/Type\/ContactType.php.html#16\">ContactType::buildForm<\/a>"],[0,1,"<a href=\"Form\/Type\/ContactType.php.html#47\">ContactType::configureOptions<\/a>"],[0,1,"<a href=\"Form\/Type\/MediaType.php.html#16\">MediaType::buildForm<\/a>"],[0,1,"<a href=\"Form\/Type\/MediaType.php.html#27\">MediaType::configureOptions<\/a>"],[0,1,"<a href=\"Form\/Type\/VoteType.php.html#16\">VoteType::buildForm<\/a>"],[0,1,"<a href=\"Form\/Type\/VoteType.php.html#28\">VoteType::configureOptions<\/a>"],[0,2,"<a href=\"Repository\/MediaRepository.php.html#22\">MediaRepository::getRandomMedia<\/a>"],[0,1,"<a href=\"Repository\/MediaRepository.php.html#53\">MediaRepository::getTopsMedia<\/a>"],[0,1,"<a href=\"Repository\/MediaRepository.php.html#71\">MediaRepository::getFlopsMedia<\/a>"],[0,1,"<a href=\"Repository\/MediaRepository.php.html#92\">MediaRepository::getHydratedMediaById<\/a>"],[0,2,"<a href=\"Repository\/MediaRepository.php.html#110\">MediaRepository::getNewMediaForUser<\/a>"],[0,1,"<a href=\"Repository\/MediaRepository.php.html#145\">MediaRepository::save<\/a>"],[0,1,"<a href=\"Repository\/VoteRepository.php.html#13\">VoteRepository::save<\/a>"],[0,1,"<a href=\"Service\/MailerService.php.html#12\">MailerService::__construct<\/a>"],[0,1,"<a href=\"Service\/MailerService.php.html#20\">MailerService::sendMail<\/a>"],[0,1,"<a href=\"Service\/MailerService.php.html#26\">MailerService::createMessageInstance<\/a>"],[0,2,"<a href=\"Test\/TypeTestCase.php.html#10\">TypeTestCase::fromArray<\/a>"],[0,2,"<a href=\"Test\/WebTestCase.php.html#11\">WebTestCase::loadFixtures<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
